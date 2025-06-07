@@ -1,0 +1,16 @@
+.reviews{
+  display: flex;
+  align-items: flex-end;
+  &__stars{
+    margin: 0 10px 0 20px;
+    padding-bottom: 1px;
+  }
+  &__count{
+    font-family: var(--font6);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #334155;
+    opacity: .7;
+  }
+}

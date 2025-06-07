@@ -1,0 +1,89 @@
+.card-dish{
+  padding: 36px 22px 30px;
+  width: calc(20% - 24px);
+  min-height: 390px;
+  transition: transform 0.5s;
+  border: 1px solid #f4f4f6;
+  border-radius: 35px;
+  box-shadow: 7px 82px 41px 0 rgba(229, 229, 229, 0.7);
+  background: #fff;
+  transition: transform 1s;
+  &:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  &__box-pic{
+    height: 184px;
+    text-align: center;
+  }
+  &__img{
+    vertical-align: top;
+  }
+  &__title{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 163%;
+    color: #323142;
+  }
+  &__info{
+    display: flex;
+    margin-bottom: 10px;
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 133%;
+    color: #8e97a6;
+  }
+  &__duration{
+    margin-right: 4px;
+  }
+  &__duration::after{
+    content: "•";
+    display: inline;
+  }
+  &__rating::before{
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    background-image: url("../assets/bluestar.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__count-box{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__price{
+    font-family: var(--third-family);
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 156%;
+    color: #323142;
+  }
+  &__cent{
+    font-size: 18px;
+    color: #8e97a6;
+  }
+  &__add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    width: 42px;
+    height: 38px;
+    color: #fff;
+    background: #323142;
+    border: none;
+    font-size: 26px;
+  }
+  &__add:hover{
+    cursor: pointer;
+  }
+  &__add::before{
+    content: "+";
+    display: inline;
+  }
+}

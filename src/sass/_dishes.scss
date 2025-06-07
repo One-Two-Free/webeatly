@@ -1,0 +1,16 @@
+.dishes{
+  margin-bottom: 100px;
+  &__wrapper{
+    padding-bottom: 120px;
+    border-bottom: 1px solid #cbcbcb;
+  }
+  &__title{
+    margin-bottom: 76px;
+  }
+  &__list{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 66px ;
+  }
+}

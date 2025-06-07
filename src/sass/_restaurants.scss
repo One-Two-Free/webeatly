@@ -1,0 +1,44 @@
+.restaurants{
+  &__wrapper{
+    border-bottom: 1px solid #cbcbcb;
+    padding-bottom: 136px;
+    margin-bottom: 100px;
+  }
+  &__title{
+    margin-bottom: 85px;
+  }
+  &__list{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 65px;
+  }
+  &__item{
+    width: calc(33.33% - 20px);
+    min-height: 300px;
+    transition: transform .5s ;
+  }
+  &__item:hover{
+    transform: scale(1.2);
+  }
+  &__row{
+    text-align: right;
+  }
+  &__link{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 226%;
+    letter-spacing: -0.01em;
+    color: #acadb9;
+  }
+  &__link::after{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 20px;
+    background-image: url('../assets/arrowgray.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,86 @@
+.download{
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 120px;
+    margin-bottom: 100px;
+    border-bottom: 1px solid #cbcbcb;
+  }
+  &__pic-box{
+    position: relative;
+    max-width: 304px;
+    margin-left: 114px;
+  }
+  &__pic-box::before{
+    content: '';
+    position: absolute;
+    left: 102%;
+    top: -22px;
+    display: block;
+    width: 35px;
+    height: 35px;
+    transform: rotate(217deg) scale(1.4);
+    background-image: url(../assets/sunicon.svg);
+    background-size: cover;
+  }
+  &__desc{
+    max-width: 544px;
+  }
+  &__title{
+    margin-bottom: 63px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 114%;
+    text-transform: capitalize;
+    color: #18181b;
+  }
+  &__title span{
+    color: #6c5fbc;
+  }
+  &__features{
+    margin-bottom: 60px;
+  }
+  &__features-item{
+    position: relative;
+    padding-left: 30px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #676767;
+  }
+  &__features-item:not(:last-child){
+    margin-bottom: 20px;
+  }
+  &__features-item::before{
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: #676767;
+  }
+
+  &__btn{
+    position: relative;
+  }
+
+  &__btn::before{
+    content: "";
+    position: absolute;
+    right: -34%;
+    top: 70%;
+    display: block;
+    width: 70px;
+    height: 86px;
+    transform: rotate(306deg) scale(-1,1);
+    background-image: url(../assets/arrowupicon.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

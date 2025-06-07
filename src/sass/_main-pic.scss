@@ -1,0 +1,116 @@
+.main-pic{
+  padding-top: 32px;
+  &__wrap{
+    position: relative;
+  }
+  &__desc{
+    position: relative;
+  }
+  &__desc::before{
+    content: "";
+    position: absolute;
+    left: 52%;
+    top: 45%;
+    display: block;
+    width: 98%;
+    height: 99%;
+    border-radius: 100%;
+    background: linear-gradient(137deg, #6c5fbc 0%, #5144a0 100%);
+    transform: translate(-50%, -50%);
+  }
+  &__desc::after{
+    content: "";
+    position: absolute;
+    right: -7%;
+    top: 13%;
+    display: block;
+    width: 70px;
+    height: 86px;
+    background-image: url('../assets/arrowupicon.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &__second-pic{
+    position: relative;
+    z-index: 1;
+    margin-right: 18px;
+  }
+  &__box{
+    position: absolute;
+    top: -10%;
+    right: -14%;
+    z-index: 10;
+    display: flex;
+    width: 330px;
+    padding: 4px 16px;
+    border-radius: 16px;
+    box-shadow: 0 16px 25px 0 rgba(70, 70, 70, 0.1);
+    background: #fff;
+  }
+  &__box::before{
+    content: '';
+    position: absolute;
+    right: -10%;
+    bottom: 100%;
+    display: block;
+    width: 40px;
+    height: 26px;
+    background-image: url('../assets/waveicon.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &__box-pic{
+    width: 74px;
+    margin-right: 18px;
+  }
+  &__title{
+    margin: 10px 0 6px 0;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #323142;
+  }
+  &__subtitle{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 140%;
+    color: #323142;
+  }
+  &__time{
+    position: absolute;
+    bottom: 8px;
+    right: 24px;
+    display: block;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 140%;
+    color: #acadb9;
+  }
+  &__graph{
+    position: absolute;
+    bottom: -14px;
+    left: -86px;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    border: 1px solid #edf2f7;
+    border-radius: 17px;
+    height: 205px;
+    box-shadow: 14px 19px 38px 0 rgba(26, 32, 44, 0.15);
+    background: #fff;
+  }
+  &__graph::before{
+    content: '';
+    position: absolute;
+    left: -16%;
+    top: 100%;
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-image: url('../assets/sunicon.svg');
+    background-size: cover;
+  }
+}

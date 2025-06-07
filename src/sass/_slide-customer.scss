@@ -1,0 +1,100 @@
+.slide-customer{
+  &__item{
+    max-width: 510px;
+    padding: 38px 42px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 20px 30px 26px rgba(70, 70, 70, 0.2);
+  }
+  &__head{
+    display: none;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  &__head.active {
+    display: flex;
+  }
+  &__head::after{
+    content: '';
+    display: block;
+    width: 58px;
+    height: 44px;
+    margin-left: auto;
+    background-image: url("../assets/quot.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &__person{
+    width: 72px;
+    height: 72px;
+    border-radius: 100%;
+    background-image: url("../assets/person.png");
+  }
+  &__box{
+    margin-left: 12px;
+  }
+  &__title{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #030314;
+  }
+  &__desc{
+    font-family: var(--font5);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 156%;
+    color: #5e5d5d;
+  }
+  &__message{
+    margin-bottom: 40px;
+    font-family: var(--font-family);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 145%;
+    text-align: justify;
+    color: #636363;
+  }
+  &__rating{
+    display: flex;
+    column-gap: 5px;
+  }
+}
+
+.slick-list{
+  overflow: visible;
+}
+
+.slick-slide:not(:last-child){
+  margin-right: 50px;
+}
+
+.slick-dots {
+  display: flex;
+  position: absolute;
+  right: 0;
+  font-size: 0;
+  border-radius: 50px;
+  background: #f4f0ff;
+}
+
+.slick-dots button{
+  font-size: 0;
+  border: none;
+  border-radius: 50px;
+  width: 191px;
+  height: 11px;
+  background: #6c5fbc;
+  opacity: 0;
+  transition: opacity .5s;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.slick-active button{
+  background: #6c5fbc;
+  opacity: 1;
+}

@@ -1,0 +1,108 @@
+.purchase-card{
+  border: 1px solid #edf2f7;
+  border-radius: 19px;
+  padding: 25px;
+
+  &__main{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__icon{
+    position: relative;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+  }
+
+  &--purple &__icon{
+    background: #f4f0ff;
+  }
+
+  &--orange &__icon{
+    background: #f2fdf6;
+  }
+
+  &__icon::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 25px;
+    height: 25px;
+    transform: translate(-50%,-50%);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--purple &__icon::before{
+    background-image: url("../assets/wallet.svg");
+  }
+
+  &--orange &__icon::before{
+    background-image: url("../assets/money.svg");
+  }
+
+  &__box{
+    margin-left: 18px;
+  }
+
+  &__title{
+    margin-bottom: 4px;
+    font-family: var(--third-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: #1a202c;
+  }
+
+  &__desc{
+    font-family: var(--third-family);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #a0aec0;
+  }
+
+  &__price{
+    margin-left: auto;
+    font-family: var(--third-family);
+    font-weight: 800;
+    font-size: 21px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    text-align: right;
+    color: #1a202c;
+  }
+
+  &__bar{
+    position: relative;
+    border-radius: 80px;
+    background: #f4f0ff;
+    height: 10px;
+  }
+
+  &--purple &__bar{
+    background: #f4f0ff;
+  }
+  &--orange &__bar{
+    background: #f7edd0;
+  }
+
+  &__size{
+    display: block;
+    height: 100%;
+    border-radius: 80px;
+  }
+
+  &--purple &__size{
+    background: var(--color-acent);
+  }
+  &--orange &__size{
+    background: #fbad18;
+  }
+}

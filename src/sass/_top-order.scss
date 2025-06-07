@@ -1,0 +1,75 @@
+.top-order{
+  border: 1px solid #f4f4f6;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 6px 71px 36px 0 rgba(229, 229, 229, 0.7);
+
+  &__info{
+    padding: 10px 26px 18px 34px;
+  }
+
+  &__tag{
+
+  }
+
+  &__title{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 162%;
+    color: #323142;
+  }
+  &__desc{
+    display: flex;
+    align-items: center;
+  }
+  &__duration{
+    margin-right: 6px;
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 133%;
+    color: #8e97a6;
+  }
+  &__duration::after{
+    content: "•";
+    display: inline;
+  }
+  &__rating{
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 133%;
+    color: #8e97a6;
+  }
+  &__rating::before{
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    background-image: url("../assets/bluestar.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__favorite{
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    border-radius: 100%;
+    background-color: #dbd9ee;
+    border: none;
+    cursor: pointer;
+  }
+  &__favorite::before{
+    content: '';
+    width: 15px;
+    height: 20px;
+    display: block;
+    margin: 0 auto;
+    background-image: url("../assets/mark.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

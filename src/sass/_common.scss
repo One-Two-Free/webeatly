@@ -1,0 +1,68 @@
+// common
+:root {
+  --font-family: "Poppins", sans-serif;
+  --second-family: "Inter", sans-serif;
+  --third-family: "Manrope", sans-serif;
+  --font3: "Roboto", sans-serif;
+  --font4: "Public Sans", sans-serif;
+  --font5: "Quicksand", sans-serif;
+  --font6: "Plus Jakarta Sans", sans-serif;
+
+  --color-acent: #6c5fbc;
+}
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+a{
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+}
+.container{
+  max-width: 1250px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.section-title{
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 57%;
+  color: #323142;
+}
+
+.section-title span{
+  color: var(--color-acent);
+}
+
+.section-link{
+  position: relative;
+  z-index: 1;
+  text-align: right;
+}
+
+.section-link__a{
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 226%;
+  letter-spacing: -0.01em;
+  color: #acadb9;
+}
+
+.section-link__a::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 20px;
+  background-image: url(http://localhost:3000/assets/arrowgray.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}

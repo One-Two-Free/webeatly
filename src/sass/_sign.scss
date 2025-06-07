@@ -1,0 +1,62 @@
+.sign{
+  margin-bottom: 216px;
+  &__inner{
+    position: relative;
+    border-radius: 30px;
+    background-image: url("../assets/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 42px 66px 60px;
+  }
+  &__inner::after{
+    content: '';
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    display: block;
+    width: 274px;
+    height: 276px;
+    background-image: url('../assets/food6.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &__discount{
+    display: block;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 70px;
+    color: #fff;
+  }
+  &__form{
+    display: inline-block;
+    position: relative;
+  }
+  &__input{
+    width: 440px;
+    padding: 22px 160px 22px 22px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    color: #878787;
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 7px 45px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+    &:focus, &:focus-visible{
+      outline-color: var(--color-acent);
+    }
+  }
+  &__btn{
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    min-height: 52px;
+    z-index: 10;
+    transform: translateY(-50%);
+  }
+
+}

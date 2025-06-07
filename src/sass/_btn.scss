@@ -1,0 +1,36 @@
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  padding: 0 26px;
+  min-height: 62px;
+
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 150%;
+  text-transform: capitalize;
+  color: #606060;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &__acent{
+    margin-left: 5px;
+    background: var(--color-acent);
+    color: #f9f9f9;
+  }
+
+  &__arrow::after{
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-left: 20px;
+    background-image: url("../assets/arrow.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

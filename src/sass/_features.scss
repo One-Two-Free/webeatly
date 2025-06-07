@@ -1,0 +1,43 @@
+.features{
+  margin-bottom: 102px;
+  padding: 57px 0 54px 0;
+  background: #5c4eae;
+  &__list{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    position: relative;
+    flex: 1 0 33.33%;
+    text-align: center;
+    
+  }
+  &__item:not(:last-child)::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    display: block;
+    height: 122px;
+    border: 1px solid #c5c5c5;
+    opacity: .15;
+  }
+  &__count{
+    display: block;
+    margin-bottom: 10px;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 125%;
+    text-align: center;
+    color: #fff;
+  }
+  &__text{
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #c5bfed;
+  }
+}

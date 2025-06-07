@@ -1,0 +1,21 @@
+.tag{
+  display: inline-block;
+  border-radius: 5px;
+  padding: 6px 12px;
+  min-height: 24px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  &__yellow{
+    color: #daa31a;
+    background: #f7edd0;
+  }
+  &__red{
+    color: #fb471d;
+    background: #f7c5ba;
+  }
+  &__green{
+    color: #309d5b;
+    background: rgba(51, 172, 100,.2);
+  }
+}

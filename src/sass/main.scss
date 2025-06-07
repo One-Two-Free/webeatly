@@ -1,0 +1,51 @@
+@use "reset-css";
+// @use "/node_modules/slick-carousel/slick/slick.scss";
+@use "slick-carousel/slick/slick";
+
+@use "common";
+@use "header";
+@use "nav";
+@use "btn";
+@use "hero";
+@use "reviews";
+@use "main-pic";
+@use "features";
+@use "download";
+@use "restaurants";
+@use "top-order";
+@use "tag";
+@use "dishes";
+@use "card-dish";
+@use "order";
+@use "meal-card";
+@use "purchase-card";
+@use "customer";
+@use "slide-customer";
+@use "sign";
+@use "footer";
+
+
+body{
+  background-color: #f9f9f9;
+}
+// @import "abstracts/functions";
+// @import "abstracts/mixins";
+// @import "abstracts/variables";
+
+// @import "base/animations";
+// @import "base/base";
+// @import "base/typography";
+// @import "base/utilities";
+
+// @import "layout/header";
+// @import "components/navigation";
+// @import "components/btn";
+// @import "components/introduce";
+// @import "components/client";
+// @import "components/advantages";
+// @import "components/aboutus";
+// @import "components/service";
+// @import "components/card-service";
+// @import "components/choose";
+// @import "components/accordion-own";
+
